@@ -42,16 +42,12 @@ const addApp = ({ applicationPath, name, posterPath, fromCli }) => {
           name,
           posterPath,
         });
-        let newProfile = createNewProfile({
-          applicationId: newApplication.applicationId,
-        });
         let applications = json['applications']['applications'];
 
         if (
           !applications.find((app) => app['applicationPath'] === applicationPath)
         ) {
           json['applications']['applications'].push(newApplication);
-          json['profiles']['profiles'].push(newProfile);
 
           let updatedFile = Buffer.from(JSON.stringify(json));
 
