@@ -19,12 +19,20 @@ npm install -g https://github.com/markni/ghub-settings-editor
 
 ### Add a custom application:
 ```
-ghub add-app --app-path 'C:\WindowsApps\Microsoft.254428597CFE2_1.3266.27842.0_x64__8wekyb3d8bbwe\HaloInfinite.exe' --name 'Halo Infinite' --poster-path 'F:\Posters\halo_infinite_poster.jpg'
+ghub add-app --app-path "C:\WindowsApps\Microsoft.254428597CFE2_1.3266.27842.0_x64__8wekyb3d8bbwe\HaloInfinite.exe" --name "Halo Infinite" --poster-path "F:\Posters\halo_infinite_poster.jpg"
 ```
-
+Template:
+```
+ghub add-app --app-path "" --name "" --poster-path ""
+```
 ### Remove a custom application:
 ```
-ghub remove-app --app-path 'C:\WindowsApps\Microsoft.254428597CFE2_1.3266.27842.0_x64__8wekyb3d8bbwe\HaloInfinite.exe'
+ghub remove-app --app-path "C:\WindowsApps\Microsoft.254428597CFE2_1.3266.27842.0_x64__8wekyb3d8bbwe\HaloInfinite.exe"
+```
+
+Template:
+```
+ghub remove-app --app-path ""
 ```
 
 ## Usage as a node module
